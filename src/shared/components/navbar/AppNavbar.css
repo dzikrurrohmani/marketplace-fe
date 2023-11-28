@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.navbar-style {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 75px;
+  background-color: #476f82;
+  color: white;
+}
+
+.logo {
+  width: 100px;
+  padding: 0;
+  margin-top: -6px;
+  margin-left: 30px;
+}
+
+.nav-links,
+.nav-links-mobile {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  margin-right: 17px;
+}
+
+.list {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: 'Organetto-Regular';
+  padding: 5px 5px;
+  margin: 13px 30px 0px 10px;
+  cursor: pointer;
+  border: none;
+  letter-spacing: 1px;
+}
+
+.logout {
+  padding: 5px 15px;
+  margin: -5px -15px;
+  background-color: #ff9e53;
+  border-color: #abb4b1;
+  border-radius: 5px;
+  color: #2b0504;
+  letter-spacing: 0px;
+  font-family: 'Organetto-Condensed-Regular';
+}
+
+.logout:hover {
+  background: #fabe8f;
+  border-color: #c5cecb;
+}
+
+.logout:active {
+  background: #c5cecb;
+  border-color: #c5cecb;
+}
+
+.mobile-icon {
+  display: none;
+}
+
+.active {
+  color: #fffd98;
+}
+
+.menu:hover {
+  color: #fffd98;
+}
+
+.icon-rotate {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin-right: 6px;
+}
+
+.profile {
+  margin-left: auto;
+  font-size: 20px;
+  font-family: 'Organetto-Condensed-Regular';
+  letter-spacing: 0px;
+}
+
+.profile:hover {
+  color: #fffd98;
+}
+
+@media screen and (max-width: 950px) {
+  .logo {
+    width: 100px;
+    padding: 0;
+    margin-top: -6px;
+    margin-left: 30px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #005469;
+    left: 0;
+    top: 75px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+    align-items: center;
+  }
+
+  .list {
+    color: white;
+    text-align: center;
+    padding: 15px;
+    transition: all 0.5s ease;
+    border: none;
+  }
+
+  .active {
+    color: #fffd98;
+  }
+
+  .mobile-icon {
+    display: block;
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    background-color: #476f82;
+    border: none;
+    outline: none;
+    right: 7px;
+  }
+
+  .menu:hover {
+    color: #fffd98;
+  }
+
+  .right {
+    margin-bottom: 15px;
+  }
+}

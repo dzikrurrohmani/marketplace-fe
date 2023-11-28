@@ -1,0 +1,243 @@
+.trans-create-container {
+  display: flex;
+  justify-content: space-between;
+  height: calc(100vh - 75px);
+  padding: 20px 0;
+  margin: 0px 35px;
+  font-family: 'Poppins-Regular';
+}
+
+.trans-create-product {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 70%;
+  background: linear-gradient(135deg, #ffffff, #d1dfe4);
+  /* background-color: white; */
+  box-shadow: 0 0 5px 5px #8daeb9;
+  border-radius: 25px;
+  padding: 15px 15px 10px 15px;
+}
+.trans-create-product-search::placeholder {
+  color: #113642;
+}
+.trans-create-product-search {
+  height: 50px;
+  width: 93.2%;
+  margin: 20px 0 30px 0;
+  margin-left: 3.2%;
+  background-color: #a4c4cf30;
+  padding-left: 40px;
+  border-radius: 10px;
+  border: none;
+  color: #113642;
+  letter-spacing: 1px;
+  font-size: 18px;
+  border-color: #476f82 !important;
+  outline: solid 3px #c1ced4;
+}
+
+.trans-create-product-list {
+  display: grid;
+  padding-right: 2%;
+  grid-template-columns: repeat(auto-fill, minmax(21%, 4fr));
+  column-gap: 3%;
+  width: 99%;
+  padding-left: 3.2%;
+  padding-bottom: 60px;
+  max-height: 85%;
+  top: 100px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* width */
+.trans-create-product-list::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 6px;
+}
+
+/* Track */
+.trans-create-product-list::-webkit-scrollbar-track {
+  box-shadow: 0;
+  border-radius: 10px;
+}
+
+/* Handle */
+.trans-create-product-list::-webkit-scrollbar-thumb {
+  background: #8daeb9;
+  border-radius: 10px;
+}
+
+.trans-create-product-list::-webkit-scrollbar-thumb:hover {
+  background: #2a7c97;
+}
+
+.trans-create-product-list::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 20px;
+}
+
+.trans-create-product-list::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 4px;
+}
+
+.trans-create-product-card {
+  overflow: hidden;
+  white-space: pre-wrap !important;
+  font-family: 'Filson-Regular';
+  font-size: 20px;
+  width: 100%;
+  /* background: linear-gradient(50deg, #476f82 90%, #92a8b3); */
+  /* background-color: #477083e1; */
+  background-color: #2a7c97;
+  box-shadow: 0 0 3px 3px #c1ced4;
+  color: whitesmoke;
+  height: 110px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  padding: 20px;
+  animation-name: trans-create-product-card-up;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-out;
+}
+
+.trans-create-product-stock {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.trans-create-product-card:hover {
+  cursor: pointer;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+  transform: scale(1.05) translateY(5px);
+  height: fit-content;
+  min-height: 110px;
+}
+
+@keyframes trans-create-product-card-up {
+  0% {
+    margin-top: 50px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+.trans-create-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 28%;
+  height: 100%;
+  background: linear-gradient(120deg, #dae5e9 50%, #c1cfd4);
+  background-color: #f3e9e4;
+  box-shadow: 0 0 5px 5px #8daeb9;
+  border-radius: 25px;
+  padding: 20px 15px 30px 15px;
+  overflow-x: hidden;
+}
+
+.trans-create-summary-title {
+  font-family: 'Filson-Bold';
+  color: #304f5e;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.trans-create-summary-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Filson-Regular';
+  font-size: 17px;
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  color: #304f5e;
+}
+
+.trans-create-summary-list-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 55%;
+}
+
+.trans-create-summary-list-base-price {
+  font-size: 13px;
+}
+
+.trans-create-summary-list-final-price {
+  margin-left: auto;
+}
+
+.trans-create-summary-bills {
+  width: 90%;
+}
+
+.trans-create-summary-list-separator {
+  width: 0.5%;
+  margin: 0 10px;
+  height: 95%;
+  background-color: black;
+}
+
+.trans-create-summary-list-delete {
+  font-size: 22px;
+}
+
+.trans-create-summary-list-delete:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.trans-create-summary-save-button {
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  background-color: blue;
+  border-radius: 10px;
+}
+
+.trans-create-summary-cancel-button {
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  background-color: red;
+  border-radius: 10px;
+}
+
+.trans-create-summary-save-button:hover,
+.trans-create-summary-cancel-button:hover {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.trans-create-summary-buttons {
+  margin-top: auto;
+  width: 90%;
+  font-family: 'Organetto-Regular';
+  font-size: 20px;
+}

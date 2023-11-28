@@ -1,0 +1,13 @@
+.new-box {
+    margin: 10px 400px;
+    padding: 50px 25px 40px 25px;
+    /* width: 40%; */
+    /* height: 40vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    /* background: #e6ccc100; */
+    /* box-shadow: 0 0 5px 5px #9bcedf; */
+  }

@@ -1,0 +1,46 @@
+.summary-box {
+  margin: 50px 0px;
+  padding: 50px 25px 30px 50px;
+  width: 60%;
+  height: 40vh;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: flex-start;
+  border-radius: 0px 0px 30px 30px;
+  background: linear-gradient(135deg, #2a7c97, #f7d3c2);
+  box-shadow: 0 0 5px 5px #9bcedf;
+}
+
+.count {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+img {
+  align-self: flex-end;
+}
+.summary-illustration {
+  height: 100%;
+}
+
+.instant-trx-box {
+  margin: 50px 0px;
+  padding: 50px 25px 40px 25px;
+  width: 40%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0px 0px 30px 30px;
+  background: #e6ccc1;
+  box-shadow: 0 0 5px 5px #9bcedf;
+}
+
+.btn-create {
+  background-color: #2a7c97;
+}

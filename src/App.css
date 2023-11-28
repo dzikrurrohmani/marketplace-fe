@@ -1,0 +1,39 @@
+#root {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: 'Organetto-Regular';
+  src: url('fonts/Organetto-Regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Organetto-Condensed-Regular';
+  src: url('fonts/Organetto-Condensed-Regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Filson-Bold';
+  src: url('fonts/Filson-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Filson-Regular';
+  src: url('fonts/Filson-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+.secondary-background {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #e9f0ed;
+}
